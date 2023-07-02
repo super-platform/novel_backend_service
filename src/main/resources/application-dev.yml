@@ -1,11 +1,11 @@
 server:
-  port: 8081
+  port: 8083
   servlet:
     context-path: /
 
 spring:
   application:
-    name: spring3-template
+    name: submission
   main:
     allow-bean-definition-overriding: true
   jpa:
@@ -27,12 +27,12 @@ spring:
   data:
     mongodb:
       ecommerce-template:
-        uri: mongodb://mongo:mongo123@localhost:27017/ecommerce_template?retryWrites=true&w=majority&directConnection=true&authMechanism=SCRAM-SHA-1&authSource=admin
+        uri: mongodb://mongo:mongo123@localhost:27017/submission?retryWrites=true&w=majority&directConnection=true&authMechanism=SCRAM-SHA-1&authSource=admin
 ###swagger
 application:
-  description: Ecommerce Template
+  description: Submission
   version: 1.0
-build.date: 2023-04-24
+build.date: 2023-07-02
 
 ###Timeout api
 rest:
