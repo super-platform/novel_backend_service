@@ -17,7 +17,7 @@ import java.util.Map;
 @EnableCaching
 @Slf4j
 @ComponentScan(basePackages = {"com.ecommerce"})
-public class SubmissionBackendServiceApplication {
+public class InquiryBackendServiceApplication {
 
 	private static final String SPRING_PROFILE_DEFAULT = "spring.profiles.default";
 	private static final String SPRING_PROFILE_DEVELOPMENT = "dev";
@@ -27,7 +27,7 @@ public class SubmissionBackendServiceApplication {
 
 	private final Environment env;
 
-	public SubmissionBackendServiceApplication(Environment env) {
+	public InquiryBackendServiceApplication(Environment env) {
 		this.env = env;
 	}
 
@@ -55,7 +55,7 @@ public class SubmissionBackendServiceApplication {
 	}
 
 	public static void main(String[] args) {
-		SpringApplication app = new SpringApplication(SubmissionBackendServiceApplication.class);
+		SpringApplication app = new SpringApplication(InquiryBackendServiceApplication.class);
 
 		addDefaultProfile(app);
 

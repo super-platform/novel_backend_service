@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.ngtu.api</groupId>
-	<artifactId>submission-backend-service</artifactId>
-	<name>submission</name>
-	<description>Submission Project</description>
+	<artifactId>inquiry-backend-service</artifactId>
+	<name>inquiry</name>
+	<description>Inquiry Project</description>
 	<packaging>jar</packaging>
 	<version>1.0</version>
 	<properties>
