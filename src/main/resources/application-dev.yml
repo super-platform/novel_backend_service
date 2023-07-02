@@ -26,8 +26,8 @@ spring:
       missing-topics-fatal: false
   data:
     mongodb:
-      ecommerce-template:
-        uri: mongodb://mongo:mongo123@localhost:27017/inquiry?retryWrites=true&w=majority&directConnection=true&authMechanism=SCRAM-SHA-1&authSource=admin
+      inquiry-db:
+        uri: mongodb://mongo:mongo123@localhost:27017/inquiryDB?retryWrites=true&w=majority&directConnection=true&authMechanism=SCRAM-SHA-1&authSource=admin
 ###swagger
 application:
   description: Inquiry

@@ -16,7 +16,7 @@ import java.util.Map;
 @SpringBootApplication
 @EnableCaching
 @Slf4j
-@ComponentScan(basePackages = {"com.ecommerce"})
+@ComponentScan(basePackages = {"com.ngtu"})
 public class InquiryBackendServiceApplication {
 
 	private static final String SPRING_PROFILE_DEFAULT = "spring.profiles.default";
