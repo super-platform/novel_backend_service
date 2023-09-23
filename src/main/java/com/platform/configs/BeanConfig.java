@@ -1,4 +1,4 @@
-package com.ngtu.api.configs;
+package com.platform.configs;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.hc.client5.http.config.RequestConfig;
@@ -44,8 +44,8 @@ public class BeanConfig {
     @Bean("restTemplateAPI")
     public RestTemplate restTemplateAPI() throws NoSuchAlgorithmException, KeyStoreException, KeyManagementException {
         // Read config timeout
-        int readTimeOut = environment.getProperty("rest.template.timeout.read", Integer.class, 300000);
-        int connectionTimeOut = environment.getProperty("rest.template.timeout.connection", Integer.class, 300000);
+        int readTimeOut = environment.getProperty("rest.template.timeout.read", Integer.class, 30000);
+        int connectionTimeOut = environment.getProperty("rest.template.timeout.connection", Integer.class, 30000);
 
         final TrustStrategy acceptingTrustStrategy = (certificates, authType) -> true;
         final SSLContext sslContext = SSLContexts.custom().loadTrustMaterial(null,acceptingTrustStrategy).build();

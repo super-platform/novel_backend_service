@@ -1,9 +1,9 @@
-package com.ngtu.api.configs;
+package com.platform.configs;
 
 
-import com.ngtu.api.common.constant.ResponseCode;
-import com.ngtu.api.common.dto.response.ResponseWithBody;
-import com.ngtu.api.common.utils.ResponseUtil;
+import com.platform.common.constant.ResponseCode;
+import com.platform.common.dto.response.ResponseWithBody;
+import com.platform.common.utils.ResponseUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

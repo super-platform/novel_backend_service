@@ -1,4 +1,4 @@
-package com.ngtu.api.configs;
+package com.platform.configs;
 
 import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.databind.*;

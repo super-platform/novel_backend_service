@@ -5,7 +5,7 @@ server:
 
 spring:
   application:
-    name: inquiry
+    name: novel
   main:
     allow-bean-definition-overriding: true
   jpa:
@@ -30,15 +30,15 @@ spring:
         uri: mongodb://mongo:mongo123@localhost:27017/inquiryDB?retryWrites=true&w=majority&directConnection=true&authMechanism=SCRAM-SHA-1&authSource=admin
 ###swagger
 application:
-  description: Inquiry
+  description: Novel
   version: 1.0
 build.date: 2023-07-02
 
 ###Timeout api
 rest:
   template:
-    read: 300000
-    connect: 300000
+    read: 30000
+    connect: 30000
 
 #  security:
 #    oauth2:

@@ -1,4 +1,4 @@
-package com.ngtu.api.configs;
+package com.platform.configs;
 
 import io.swagger.v3.oas.models.OpenAPI;
 import io.swagger.v3.oas.models.info.Info;
@@ -27,7 +27,7 @@ public class SwaggerConfig {
     public GroupedOpenApi publicAPI(){
         return GroupedOpenApi.builder()
                 .group("Publish")
-                .packagesToScan("com.ecommerce.template.controller.publish")
+                .packagesToScan("com.platform.controller.publish")
                 .pathsToMatch("/**")
                 .build();
     }
@@ -36,7 +36,7 @@ public class SwaggerConfig {
     public GroupedOpenApi actuatorAPI(){
         return GroupedOpenApi.builder()
                 .group("Internal")
-                .packagesToScan("com.ecommerce.template.controller.internal")
+                .packagesToScan("com.platform.controller.internal")
                 .pathsToMatch("/**")
                 .build();
     }

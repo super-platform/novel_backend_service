@@ -1,4 +1,4 @@
-package com.ngtu.api.service;
+package com.platform.service;
 
 public interface TestService {
 }

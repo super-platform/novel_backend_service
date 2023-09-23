@@ -1,4 +1,4 @@
-package com.ngtu.api.repositories;
+package com.platform.repositories;
 
 public interface TestRepository {
 }

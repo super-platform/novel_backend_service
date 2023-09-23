@@ -1,11 +1,11 @@
-package com.ngtu.api.controllers.internal;
+package com.platform.controller.internal;
 
 
-import com.ngtu.api.dto.TestDTO;
-import com.ngtu.api.entities.Template;
-import com.ngtu.api.repositories.mongo.TemplateRepository;
-import com.ngtu.api.common.dto.response.ResponseWithBody;
-import com.ngtu.api.common.utils.ResponseUtil;
+import com.platform.dto.TestDTO;
+import com.platform.entities.Template;
+import com.platform.repositories.mongo.TemplateRepository;
+import com.platform.common.dto.response.ResponseWithBody;
+import com.platform.common.utils.ResponseUtil;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import io.swagger.v3.oas.annotations.tags.Tag;
@@ -22,7 +22,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.Optional;
 import java.util.UUID;
 
-import static com.ngtu.api.common.constant.CommonConstants.TRACE_ID;
+import static com.platform.common.constant.CommonConstants.TRACE_ID;
 
 
 @RestController

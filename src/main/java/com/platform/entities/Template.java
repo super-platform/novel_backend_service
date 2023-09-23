@@ -1,4 +1,4 @@
-package com.ngtu.api.entities;
+package com.platform.entities;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

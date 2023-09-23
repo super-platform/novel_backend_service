@@ -1,11 +1,10 @@
-package com.ngtu.api;
+package com.platform;
 
 import jakarta.annotation.PostConstruct;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cache.annotation.EnableCaching;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.core.env.Environment;
 
 import java.util.Arrays;
@@ -16,8 +15,7 @@ import java.util.Map;
 @SpringBootApplication
 @EnableCaching
 @Slf4j
-@ComponentScan(basePackages = {"com.ngtu"})
-public class InquiryBackendServiceApplication {
+public class NovelBackendServiceApplication {
 
 	private static final String SPRING_PROFILE_DEFAULT = "spring.profiles.default";
 	private static final String SPRING_PROFILE_DEVELOPMENT = "dev";
@@ -27,7 +25,7 @@ public class InquiryBackendServiceApplication {
 
 	private final Environment env;
 
-	public InquiryBackendServiceApplication(Environment env) {
+	public NovelBackendServiceApplication(Environment env) {
 		this.env = env;
 	}
 
@@ -55,7 +53,7 @@ public class InquiryBackendServiceApplication {
 	}
 
 	public static void main(String[] args) {
-		SpringApplication app = new SpringApplication(InquiryBackendServiceApplication.class);
+		SpringApplication app = new SpringApplication(NovelBackendServiceApplication.class);
 
 		addDefaultProfile(app);
 

@@ -8,10 +8,10 @@
 		<version>3.0.6</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.ngtu.api</groupId>
-	<artifactId>inquiry-backend-service</artifactId>
-	<name>inquiry</name>
-	<description>Inquiry Project</description>
+	<groupId>com.platform</groupId>
+	<artifactId>novel-backend-service</artifactId>
+	<name>novel</name>
+	<description>Novel Project</description>
 	<packaging>jar</packaging>
 	<version>1.0</version>
 	<properties>
@@ -108,7 +108,7 @@
 <!--		</dependency>-->
 
 		<dependency>
-			<groupId>com.ngtu.api</groupId>
+			<groupId>com.platform</groupId>
 			<artifactId>common</artifactId>
 			<version>1.0</version>
 		</dependency>
