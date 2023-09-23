@@ -2,8 +2,6 @@ package com.platform.controller.internal;
 
 
 import com.platform.dto.TestDTO;
-import com.platform.entities.Template;
-import com.platform.repositories.mongo.TemplateRepository;
 import com.platform.common.dto.response.ResponseWithBody;
 import com.platform.common.utils.ResponseUtil;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
@@ -32,7 +30,6 @@ import static com.platform.common.constant.CommonConstants.TRACE_ID;
 @RequiredArgsConstructor
 public class RestResources {
 
-    private final TemplateRepository templateRepository;
 
     @ApiResponses(value = {
             @ApiResponse(responseCode = "200", description = "success"),
@@ -42,12 +39,8 @@ public class RestResources {
         String traceId = UUID.randomUUID().toString();
         MDC.put(TRACE_ID, traceId);
         log.info("tutruong");
-        Optional<Template> optionalTemplate = templateRepository.findTemplateByTest(testDTO.getTest());
-        String result = "";
-        if(optionalTemplate.isPresent()){
-            result = optionalTemplate.get().getTest();
-        }
+
         MDC.clear();
-        return ResponseEntity.ok(new ResponseWithBody(result, ResponseUtil.createSuccessStatus()));
+        return ResponseEntity.ok(new ResponseWithBody("TT", ResponseUtil.createSuccessStatus()));
     }
 }
