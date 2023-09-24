@@ -71,7 +71,7 @@ public class PostgresDBConfig {
         LocalContainerEntityManagerFactoryBean localContainerEntityManagerFactoryBean = builder.dataSource(dataSource)
                 .persistenceUnit("customerUnit").build();
         localContainerEntityManagerFactoryBean.setJpaVendorAdapter(jpaVendorAdapter());
-        localContainerEntityManagerFactoryBean.setPackagesToScan("com.kazenokumo.reportdataservice.entities.postgres");
+        localContainerEntityManagerFactoryBean.setPackagesToScan("com.platform.entities.postgres");
         localContainerEntityManagerFactoryBean.afterPropertiesSet();
         return localContainerEntityManagerFactoryBean.getObject();
     }
