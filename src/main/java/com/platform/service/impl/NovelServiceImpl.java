@@ -5,6 +5,7 @@ import com.platform.dto.novel.NovelCreateDTO;
 import com.platform.dto.novel.NovelDTO;
 import com.platform.entities.postgres.Author;
 import com.platform.entities.postgres.Novel;
+import com.platform.entities.postgres.QNovel;
 import com.platform.mappers.NovelMapper;
 import com.platform.repositories.postgres.AuthorRepository;
 import com.platform.repositories.postgres.NovelRepository;
@@ -14,7 +15,7 @@ import org.springframework.stereotype.Service;
 import java.util.Optional;
 
 @Service
-public class NovelServiceImpl extends BaseCrudServiceImpl<Novel, NovelDTO, NovelCreateDTO> implements NovelService {
+public class NovelServiceImpl extends BaseCrudServiceImpl<Novel, QNovel, NovelDTO, NovelCreateDTO> implements NovelService {
 
     private final AuthorRepository authorRepository;
 

@@ -1,13 +1,10 @@
 package com.platform.dto.author;
 
-import com.platform.common.dto.response.BaseDTO;
+import com.platform.common.dto.BaseDTO;
 import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;
-
-import java.util.List;
 
 @NoArgsConstructor
 @AllArgsConstructor

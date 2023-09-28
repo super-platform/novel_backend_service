@@ -8,6 +8,7 @@ import com.platform.dto.chapter.ChapterDTO;
 import com.platform.entities.postgres.Author;
 import com.platform.entities.postgres.Chapter;
 import com.platform.entities.postgres.Novel;
+import com.platform.entities.postgres.QChapter;
 import com.platform.repositories.postgres.NovelRepository;
 import com.platform.service.ChapterService;
 import org.springframework.stereotype.Service;
@@ -15,7 +16,7 @@ import org.springframework.stereotype.Service;
 import java.util.Optional;
 
 @Service
-public class ChapterServiceImpl extends BaseCrudServiceImpl<Chapter, ChapterDTO, ChapterCreateDTO> implements ChapterService {
+public class ChapterServiceImpl extends BaseCrudServiceImpl<Chapter, QChapter, ChapterDTO, ChapterCreateDTO> implements ChapterService {
     private final NovelRepository novelRepository;
     public ChapterServiceImpl(BaseRepository<Chapter> repository, BaseMapper<Chapter, ChapterDTO, ChapterCreateDTO> mapper, NovelRepository novelRepository) {
         super(repository, mapper);

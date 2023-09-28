@@ -1,12 +1,10 @@
 package com.platform.dto.chapter;
 
-import com.platform.common.dto.response.BaseDTO;
+import com.platform.common.dto.BaseDTO;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;
-
-import java.time.LocalDateTime;
 
 @NoArgsConstructor
 @AllArgsConstructor

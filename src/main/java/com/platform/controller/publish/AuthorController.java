@@ -6,7 +6,6 @@ import com.platform.common.utils.ResponseUtil;
 import com.platform.dto.author.AuthorCreateDTO;
 import com.platform.dto.author.AuthorDTO;
 import com.platform.service.AuthorService;
-import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import io.swagger.v3.oas.annotations.tags.Tag;
@@ -37,7 +36,6 @@ public class AuthorController {
     public ResponseEntity<ResponseWithBody<AuthorDTO>> findAuthorById(@PathVariable Long id){
         String traceId = UUID.randomUUID().toString();
         MDC.put(TRACE_ID, traceId);
-
         AuthorDTO authorDTO = authorService.findById(id);
 
         MDC.clear();

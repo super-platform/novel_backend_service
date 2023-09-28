@@ -1,6 +1,8 @@
 package com.platform.controller.publish;
 
 
+import com.platform.common.dto.request.PageableRequest;
+import com.platform.common.dto.response.PageResponse;
 import com.platform.common.dto.response.ResponseWithBody;
 import com.platform.common.utils.ResponseUtil;
 import com.platform.dto.chapter.ChapterCreateDTO;
@@ -54,10 +56,24 @@ public class ChapterController {
     public ResponseEntity<ResponseWithBody<ChapterDTO>> create(@RequestBody ChapterCreateDTO chapterCreateDTO){
         String traceId = UUID.randomUUID().toString();
         MDC.put(TRACE_ID, traceId);
-
+        
         ChapterDTO chapterDTO = chapterService.save(chapterCreateDTO);
 
         MDC.clear();
         return ResponseEntity.ok(new ResponseWithBody(chapterDTO, ResponseUtil.createSuccessStatus()));
+    }
+
+    @ApiResponses(value = {
+            @ApiResponse(responseCode = "200", description = "Indicates that the request was executed successfully"),
+            @ApiResponse(responseCode = "500", description = "Indicates that there is a server error occurs during executing the request")})
+    @PostMapping(value = "/paginate", consumes = "application/json",produces = "application/json")
+    public ResponseEntity<ResponseWithBody<PageResponse<ChapterDTO>>> paginate(@RequestBody PageableRequest pageableRequest){
+        String traceId = UUID.randomUUID().toString();
+        MDC.put(TRACE_ID, traceId);
+
+        PageResponse<ChapterDTO> pageResponse = chapterService.paginate(pageableRequest);
+
+        MDC.clear();
+        return ResponseEntity.ok(new ResponseWithBody(pageResponse, ResponseUtil.createSuccessStatus()));
     }
 }
