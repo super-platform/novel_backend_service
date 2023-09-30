@@ -20,6 +20,7 @@ public class NovelCreateDTO  {
     private Long totalView;
     private Long totalVote;
     private String overview;
+    private Boolean crawling;
     private String[] tags;
     private Long authorId;
 }

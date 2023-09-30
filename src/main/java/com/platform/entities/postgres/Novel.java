@@ -46,6 +46,10 @@ public class Novel extends BaseEntity {
     @Column(name = "overview", columnDefinition = "text")
     private String overview;
 
+
+    @Column(name = "crawling", columnDefinition = "boolean default false")
+    private Boolean crawling;
+
     @Type(StringArrayType.class)
     @Column(
             name = "tags",
