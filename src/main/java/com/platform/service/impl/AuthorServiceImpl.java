@@ -1,6 +1,5 @@
 package com.platform.service.impl;
 
-import com.platform.common.service.impl.BaseCrudServiceImpl;
 import com.platform.dto.author.AuthorCreateDTO;
 import com.platform.dto.author.AuthorDTO;
 import com.platform.entities.postgres.Author;

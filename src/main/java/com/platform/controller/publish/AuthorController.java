@@ -1,7 +1,7 @@
 package com.platform.controller.publish;
 
 
-import com.platform.common.dto.response.ResponseWithBody;
+import com.platform.common.dto.ResponseWithBody;
 import com.platform.common.utils.ResponseUtil;
 import com.platform.dto.author.AuthorCreateDTO;
 import com.platform.dto.author.AuthorDTO;

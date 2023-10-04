@@ -1,7 +1,7 @@
 package com.platform.entities.postgres;
-
-import com.platform.common.entities.BaseEntity;
+;
 import com.platform.common.enums.NovelStatus;
+import com.platform.entities.BaseEntity;
 import com.vladmihalcea.hibernate.type.array.StringArrayType;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

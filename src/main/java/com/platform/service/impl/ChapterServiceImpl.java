@@ -1,15 +1,14 @@
 package com.platform.service.impl;
 
-import com.platform.common.mapper.BaseMapper;
-import com.platform.common.repository.BaseRepository;
-import com.platform.common.service.impl.BaseCrudServiceImpl;
 import com.platform.dto.chapter.ChapterCreateDTO;
 import com.platform.dto.chapter.ChapterDTO;
 import com.platform.entities.postgres.Author;
 import com.platform.entities.postgres.Chapter;
 import com.platform.entities.postgres.Novel;
 import com.platform.entities.postgres.QChapter;
+import com.platform.mapper.BaseMapper;
 import com.platform.repositories.postgres.NovelRepository;
+import com.platform.repository.BaseRepository;
 import com.platform.service.ChapterService;
 import org.springframework.stereotype.Service;
 

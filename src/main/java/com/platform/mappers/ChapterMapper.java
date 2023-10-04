@@ -1,9 +1,9 @@
 package com.platform.mappers;
 
-import com.platform.common.mapper.BaseMapper;
 import com.platform.dto.chapter.ChapterCreateDTO;
 import com.platform.dto.chapter.ChapterDTO;
 import com.platform.entities.postgres.Chapter;
+import com.platform.mapper.BaseMapper;
 import org.mapstruct.Mapper;
 import org.mapstruct.NullValuePropertyMappingStrategy;
 

@@ -2,7 +2,7 @@ package com.platform.controller.internal;
 
 
 import com.platform.dto.TestDTO;
-import com.platform.common.dto.response.ResponseWithBody;
+import com.platform.common.dto.ResponseWithBody;
 import com.platform.common.utils.ResponseUtil;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;

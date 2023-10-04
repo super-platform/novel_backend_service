@@ -1,7 +1,7 @@
 package com.platform.dto.novel;
 
-import com.platform.common.dto.BaseDTO;
 import com.platform.common.enums.NovelStatus;
+import com.platform.dto.BaseDTO;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

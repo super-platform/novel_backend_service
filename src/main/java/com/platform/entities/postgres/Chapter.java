@@ -1,6 +1,6 @@
 package com.platform.entities.postgres;
 
-import com.platform.common.entities.BaseEntity;
+import com.platform.entities.BaseEntity;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
