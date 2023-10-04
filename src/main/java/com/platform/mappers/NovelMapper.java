@@ -1,7 +1,7 @@
 package com.platform.mappers;
 
-import com.platform.dto.novel.NovelCreateDTO;
-import com.platform.dto.novel.NovelDTO;
+import com.platform.common.dto.novel.NovelCreateDTO;
+import com.platform.common.dto.novel.NovelDTO;
 import com.platform.entities.postgres.Novel;
 import com.platform.mapper.BaseMapper;
 import org.mapstruct.Mapper;

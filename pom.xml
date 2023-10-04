@@ -67,7 +67,7 @@
 
 		<dependency>
 			<groupId>com.platform</groupId>
-			<artifactId>common</artifactId>
+			<artifactId>common-novel-dto</artifactId>
 			<version>1.0</version>
 		</dependency>
 

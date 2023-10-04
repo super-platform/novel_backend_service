@@ -1,7 +1,7 @@
 package com.platform.service.impl;
 
-import com.platform.dto.author.AuthorCreateDTO;
-import com.platform.dto.author.AuthorDTO;
+import com.platform.common.dto.author.AuthorCreateDTO;
+import com.platform.common.dto.author.AuthorDTO;
 import com.platform.entities.postgres.Author;
 import com.platform.entities.postgres.QAuthor;
 import com.platform.mappers.AuthorMapper;

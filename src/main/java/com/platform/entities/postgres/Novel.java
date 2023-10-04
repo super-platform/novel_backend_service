@@ -1,5 +1,5 @@
 package com.platform.entities.postgres;
-;
+
 import com.platform.common.enums.NovelStatus;
 import com.platform.entities.BaseEntity;
 import com.vladmihalcea.hibernate.type.array.StringArrayType;
@@ -11,6 +11,8 @@ import lombok.NoArgsConstructor;
 import org.hibernate.annotations.Type;
 
 import java.util.List;
+
+;
 
 @Entity
 @Table(name = "novels")

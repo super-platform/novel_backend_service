@@ -1,8 +1,7 @@
 package com.platform.service.impl;
 
-import com.platform.dto.chapter.ChapterCreateDTO;
-import com.platform.dto.chapter.ChapterDTO;
-import com.platform.entities.postgres.Author;
+import com.platform.common.dto.chapter.ChapterCreateDTO;
+import com.platform.common.dto.chapter.ChapterDTO;
 import com.platform.entities.postgres.Chapter;
 import com.platform.entities.postgres.Novel;
 import com.platform.entities.postgres.QChapter;

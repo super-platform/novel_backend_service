@@ -3,8 +3,8 @@ package com.platform.controller.publish;
 
 import com.platform.common.dto.ResponseWithBody;
 import com.platform.common.utils.ResponseUtil;
-import com.platform.dto.author.AuthorCreateDTO;
-import com.platform.dto.author.AuthorDTO;
+import com.platform.common.dto.author.AuthorCreateDTO;
+import com.platform.common.dto.author.AuthorDTO;
 import com.platform.service.AuthorService;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
