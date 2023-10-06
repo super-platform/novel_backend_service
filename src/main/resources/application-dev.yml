@@ -5,7 +5,7 @@ server:
 
 spring:
   application:
-    name: novel
+    name: novel_backend_service
   main:
     allow-bean-definition-overriding: true
   jpa:
@@ -41,22 +41,8 @@ rest:
     read: 30000
     connect: 30000
 
-#  security:
-#    oauth2:
-#      client:
-#        registration:
-#          keycloak:
-#            client-id: clientId
-#            client-secret: uuid
-#            scope: openid
-#            authorization-grant-type: authorization_code
-#        provider:
-#          keycloak:
-#            issuer-uri: https://kecloak.com
-#            user-name-attribute: preferred_username
-#      resourceserver:
-#        jwt:
-#          issuer-uri: https://kecloak.com
-
-keycloak:
-  enabled: false
+### connect to eureka server
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8070/eureka

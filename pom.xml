@@ -65,6 +65,7 @@
 			<version>${hibernate-types.version}</version>
 		</dependency>
 
+
 		<dependency>
 			<groupId>com.platform</groupId>
 			<artifactId>common-novel-dto</artifactId>
